@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href ngx-screen-saver-demo && gh-pages -d dist/screen-saver-package-test"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "gh-pages": "^4.0.0",
     "ngx-screen-saver": "^0.0.4",
     "primeicons": "^5.0.0",
     "primeng": "^13.4.1",
